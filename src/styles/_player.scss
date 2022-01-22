@@ -1,0 +1,45 @@
+.player{
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.time-controls{
+    width: 35%;
+    display: flex;
+
+    input{
+        width: 100%;
+        padding: 2px 0px;
+        cursor: pointer;
+    }
+    p{
+        padding: 5px;
+        color: #282120;
+        font-size: 18px;
+    }
+}
+
+.play-control{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    width: 20%;
+}
+.song-play-pause{
+    cursor: pointer;
+    color: #707070;
+}
+
+@media screen and (max-width : 800px) {
+    .time-controls{
+        width: 85%;
+    }
+    .play-control{
+        width: 60%;
+    }
+
+}
