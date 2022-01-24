@@ -33,6 +33,10 @@
     cursor: pointer;
     color: #707070;
 }
+.loop-active{
+    color: red;
+}
+
 
 @media screen and (max-width : 800px) {
     .time-controls{

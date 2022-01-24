@@ -2,7 +2,9 @@ import React, {useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlay,faPause,faBackward, faForward,faRedo } from '@fortawesome/free-solid-svg-icons'
 
-const Player = ({currentSong, isPlaying, setIsPlaying, audioRef, songInfo, setSongInfo, songs, setCurrentSong})=>{
+const Player = ({currentSong, isPlaying, setIsPlaying, audioRef, songInfo, setSongInfo, songs, setCurrentSong, loop, setLoop})=>{
+
+    
 
     useEffect(()=>{
         if(isPlaying){
@@ -37,9 +39,8 @@ const Player = ({currentSong, isPlaying, setIsPlaying, audioRef, songInfo, setSo
         setSongInfo({...songInfo, currentTime : e.target.value})
     }
 
-    const replayHandler = (e)=>{
-        audioRef.current.currentTime = 0;
-        setSongInfo({...songInfo, currentTime : 0});
+    const replayHandler = ()=>{
+        setLoop(!loop);
     }
 
     const skipTrackHandler = (direction)=>{
@@ -70,7 +71,7 @@ const Player = ({currentSong, isPlaying, setIsPlaying, audioRef, songInfo, setSo
                 <FontAwesomeIcon className = 'song-play-pause' icon={isPlaying? faPause : faPlay} onClick={playSongHandler} size='2x'/>
                 <FontAwesomeIcon className = 'song-play-pause' icon={faForward} size='2x' onClick={()=>skipTrackHandler('forward')}/>
             </div>
-            <FontAwesomeIcon className = 'song-play-pause' icon={faRedo} size='2x' onClick={replayHandler}/>
+            <FontAwesomeIcon className = {`song-play-pause ${loop? "loop-active" : ""}`} icon={faRedo} size='2x' onClick={replayHandler}/>
             
         </div>
     );
