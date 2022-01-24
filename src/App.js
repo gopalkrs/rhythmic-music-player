@@ -13,6 +13,7 @@ function App() {
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setIsPlaying] = useState(false);
   const [libraryStatus, setLibraryStatus] = useState(false);
+  const [loop, setLoop] = useState(false);
 
   //audio ref state lifting done from player
   const audioRef = useRef(null);
@@ -24,7 +25,22 @@ function App() {
 
   const endSongHandler=()=>{
     const index = songs.findIndex((song)=>song.id === currentSong.id);
-    setCurrentSong(songs[((index + 1) % songs.length)]);
+    if(loop){
+      setCurrentSong(songs[index]);
+      audioRef.current.currentTime = 0;
+      setSongInfo({...songInfo, currentTime : 0});
+      if(isPlaying){
+        const playingpromise = audioRef.current.play();
+        if(playingpromise !== undefined) {
+            playingpromise.then((audio)=>{
+                audioRef.current.play();
+            });
+        }
+      }
+    }
+    else{
+      setCurrentSong(songs[((index + 1) % songs.length)]);
+    }
   }
 
   const timeUpdateHandler =(e)=>{
@@ -46,6 +62,8 @@ function App() {
         setSongInfo={setSongInfo}
         songs={songs}
         setCurrentSong={setCurrentSong}
+        loop={loop}
+        setLoop={setLoop}
       />
       <SongGallery
         songs={songs} 
