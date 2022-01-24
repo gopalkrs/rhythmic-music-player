@@ -77,7 +77,20 @@ function musicData(){
                 active : false
             },
             {
-                
+                name : "Chale Chalo",
+                cover : "https://pagalfree.com/images/128Chale Chalo - Lagaan 128 Kbps.jpg",
+                artist : "A.R Rahman, Srinivas",
+                audio : "https://pagalfree.com/musics/128-Chale Chalo - Lagaan 128 Kbps.mp3",
+                id : uuidv4(),
+                active : false
+            },
+            {
+                name : "Beh Chala",
+                cover : "https://pagalfree.com/images/128Beh Chala - Uri - The Surgical Strike 128 Kbps.jpg",
+                artist : "Yasser Desai, Shashwat Sachdev",
+                audio : "https://pagalfree.com/musics/128-Beh Chala - Uri - The Surgical Strike 128 Kbps.mp3",
+                id : uuidv4(),
+                active : false
             }
         ]
     );
