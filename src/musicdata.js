@@ -12,10 +12,18 @@ function musicData(){
                 active : true
             },
             {
-                name : "Everlight",
-                cover : "https://chillhop.com/wp-content/uploads/2021/11/4c9682ee612a3b8ef51de286c49b5489408e9257-1024x1024.jpg",
-                artist : "Parkbench Epiphany",
-                audio : "https://mp3.chillhop.com/serve.php/?mp3=27501",
+                name : "Rubaru",
+                cover : "https://pagalsong.in/uploads//thumbnails/300x300/id3Picture_1043891242.jpg",
+                artist : "Kamal Khan",
+                audio : "https://pagalsong.in/uploads/systemuploads/mp3/Ginny Weds Sunny/Rubaru - Ginny Weds Sunny 128 Kbps.mp3",
+                id : uuidv4(),
+                active : false
+            },
+            {
+                name : "Peer Manawan Challiyaan",
+                cover : "https://c.saavncdn.com/594/Peer-Manaawan-Challiyaan-Coke-Studio-MTV-Season-4-Episode-5-Punjabi-2015-500x500.jpg",
+                artist : "Sukhwinder Singh, Salim-Suleiman",
+                audio : "https://pwdown.com/9899/Peer Manaawan Challiyaan - Sukhwinder Singh (Coke Studio).mp3",
                 id : uuidv4(),
                 active : false
             },
@@ -44,10 +52,10 @@ function musicData(){
                 active : false
             },
             {
-                name : "Viatecture",
-                cover : "https://chillhop.com/wp-content/uploads/2021/06/23b2ff959731b56ea8545828b462311e8b1a2bcc-1024x1024.jpg",
-                artist : "Leavv, Makzo",
-                audio : "https://mp3.chillhop.com/serve.php/?mp3=20119",
+                name : "Desire",
+                cover : "https://i1.sndcdn.com/artworks-eG3GhQd6JPPU7ezs-2OhtcQ-t500x500.jpg",
+                artist : "AP Dhillon, Gurinder Gill",
+                audio : "https://cdnsongs.com/music/data/Punjabi/202111/Hidden_Gems_EP/128/Desires_1.mp3",
                 id : uuidv4(),
                 active : false
             },
@@ -60,10 +68,10 @@ function musicData(){
                 active : false
             },
             {
-                name : "Colors Fade",
-                cover : "https://chillhop.com/wp-content/uploads/2020/09/686808356b2bbc6a368e372ea604150bc346c788-1024x1024.jpg",
-                artist : "Sleepy Fish",
-                audio : "https://mp3.chillhop.com/serve.php/?mp3=10023",
+                name : "Chan Kithan",
+                cover : "https://images.genius.com/e8f1c5c05f1d3076a504dd425d87e2c5.348x348x1.png",
+                artist : "Ali Sethi",
+                audio : "http://www.themusicbeats.net/wp-content/uploads/2017/06/Chan-Kithan-By-Ali-Sethithemusicbeats.mp3",
                 id : uuidv4(),
                 active : false
 
