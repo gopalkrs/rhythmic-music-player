@@ -1,7 +1,7 @@
 {
   "name": "rhythmic-music-player",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
@@ -52,5 +52,5 @@
   "bugs": {
     "url": "https://github.com/gopalkrs/rhythmic-music-player/issues"
   },
-  "homepage": "https://github.com/gopalkrs/rhythmic-music-player#readme"
+  "homepage": "https://github.com/gopalkrs/rhythmic-music-player"
 }
