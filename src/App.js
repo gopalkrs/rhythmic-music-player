@@ -6,6 +6,7 @@ import Song from './components/Song';
 import musicData from './musicdata';
 import SongGallery from './components/SongGallery';
 import Navigation from './components/Navigation';
+import Footer from './components/Footer';
 
 function App() {
   const [songs, setSongs] = useState(musicData());
@@ -60,8 +61,9 @@ function App() {
         src={currentSong.audio}
         onEnded={endSongHandler} >
       </audio>
-      
+      <Footer />
     </div>
+
   )
 }
 

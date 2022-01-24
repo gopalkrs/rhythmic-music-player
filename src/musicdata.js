@@ -9,7 +9,6 @@ function musicData(){
                 artist : "SwuM, afternoon bike ride",
                 audio : "https://mp3.chillhop.com/serve.php/?mp3=30134",
                 id : uuidv4(),
-                color : ["#496371", "#35312D"],
                 active : true
             },
             {
@@ -18,7 +17,6 @@ function musicData(){
                 artist : "Parkbench Epiphany",
                 audio : "https://mp3.chillhop.com/serve.php/?mp3=27501",
                 id : uuidv4(),
-                color : ["#496371", "#35312D"],
                 active : false
             },
             {
@@ -27,7 +25,6 @@ function musicData(){
                 artist : "Parkbench Epiphany",
                 audio : "https://mp3.chillhop.com/serve.php/?mp3=27504",
                 id : uuidv4(),
-                color : ["#496371", "#35312D"],
                 active : false
             },
             {
@@ -36,7 +33,6 @@ function musicData(){
                 artist : "Henz",
                 audio : "https://mp3.chillhop.com/serve.php/?mp3=24643",
                 id : uuidv4(),
-                color : ["#455570", "#493C2A"],
                 active : false
             },
             {
@@ -45,7 +41,6 @@ function musicData(){
                 artist : "SwuM",
                 audio : "https://mp3.chillhop.com/serve.php/?mp3=15226",
                 id : uuidv4(),
-                color : ["#543E2D", "#223030"],
                 active : false
             },
             {
@@ -54,7 +49,6 @@ function musicData(){
                 artist : "Leavv, Makzo",
                 audio : "https://mp3.chillhop.com/serve.php/?mp3=20119",
                 id : uuidv4(),
-                color : ["#E8B7B1", "#80A652"],
                 active : false
             },
             {
@@ -63,7 +57,6 @@ function musicData(){
                 artist : "Makzo, Mama Aiuto",
                 audio : "https://mp3.chillhop.com/serve.php/?mp3=24767",
                 id : uuidv4(),
-                color : ["#BAD2DC", "#392E4C"],
                 active : false
             },
             {
@@ -72,7 +65,6 @@ function musicData(){
                 artist : "Sleepy Fish",
                 audio : "https://mp3.chillhop.com/serve.php/?mp3=10023",
                 id : uuidv4(),
-                color : ["#8FBFCC", "#EFF8FA"],
                 active : false
 
             },
@@ -82,8 +74,10 @@ function musicData(){
                 artist : "Benny Dayal, Pritam",
                 audio : "https://pagalsong.in/uploads/systemuploads/mp3/83/Bigadne De - 83 128 Kbps.mp3",
                 id : uuidv4(),
-                color : ["#8FBFCC", "#EFF8FA"],
                 active : false
+            },
+            {
+                
             }
         ]
     );

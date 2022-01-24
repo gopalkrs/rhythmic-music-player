@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlay,faPause,faBackward, faForward } from '@fortawesome/free-solid-svg-icons'
+import { faPlay,faPause,faBackward, faForward,faRedo } from '@fortawesome/free-solid-svg-icons'
 
 const Player = ({currentSong, isPlaying, setIsPlaying, audioRef, songInfo, setSongInfo, songs, setCurrentSong})=>{
 
@@ -37,6 +37,11 @@ const Player = ({currentSong, isPlaying, setIsPlaying, audioRef, songInfo, setSo
         setSongInfo({...songInfo, currentTime : e.target.value})
     }
 
+    const replayHandler = (e)=>{
+        audioRef.current.currentTime = 0;
+        setSongInfo({...songInfo, currentTime : 0});
+    }
+
     const skipTrackHandler = (direction)=>{
         const index = songs.findIndex((song)=>song.id === currentSong.id);
         if(direction==='forward'){
@@ -65,6 +70,7 @@ const Player = ({currentSong, isPlaying, setIsPlaying, audioRef, songInfo, setSo
                 <FontAwesomeIcon className = 'song-play-pause' icon={isPlaying? faPause : faPlay} onClick={playSongHandler} size='2x'/>
                 <FontAwesomeIcon className = 'song-play-pause' icon={faForward} size='2x' onClick={()=>skipTrackHandler('forward')}/>
             </div>
+            <FontAwesomeIcon className = 'song-play-pause' icon={faRedo} size='2x' onClick={replayHandler}/>
             
         </div>
     );
